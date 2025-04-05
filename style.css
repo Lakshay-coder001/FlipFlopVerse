@@ -1,0 +1,176 @@
+/* Reset & Base */
+html, body {
+    height: 100%;
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom right, #e3f2fd, #f3e5f5);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  /* Header */
+  header {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: #1e3a8a;
+  }
+  
+  /* Flip-Flop Cards */
+  .flip-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .flip-card {
+    background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 260px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(to right, #3b82f6, #9333ea);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  position: relative;
+  }
+  
+  .flip-card:hover {
+    transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  .flip-card h3 {
+    font-size: 1.4rem;
+  background: linear-gradient(90deg, #3b82f6, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background 0.3s ease;
+  }
+  h3 {
+    font-size: 1.4rem;
+    color: #3b82f6; /* fallback color */
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .flip-card p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e3a8a;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 0.95rem;
+  }
+  main {
+    flex: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .flip-options {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .truth-table {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border: 2px solid #1e3a8a;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .truth-table th,
+  .truth-table td {
+    padding: 12px 18px;
+    text-align: center;
+    border: 1px solid #1e3a8a;
+  }
+  
+  .truth-table th {
+    background-color: #1e3a8a;
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .truth-table tbody tr:nth-child(even) {
+    background-color: #eef2ff;
+  }
+  
+  
+  /* Back to Home Button */
+  .back-home {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .back-home a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(to right, #3b82f6, #9333ea);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  .back-home a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  }
+  
