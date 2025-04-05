@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JK Flip-Flop Circuit</title>
+  <style>
+    svg { width: 100%; max-width: 600px; height: auto; margin: 2em auto; display: block; }
+    .hover:hover { fill: #0077cc; cursor: pointer; }
+    text { font-family: sans-serif; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 400 300">
+    <!-- Flip-Flop Box -->
+    <rect x="120" y="80" width="160" height="140" rx="10" ry="10" fill="#e6f2ff" stroke="#0f4c81" stroke-width="2"/>
+    <text x="190" y="150" text-anchor="middle" fill="#0f4c81" font-size="18">JK</text>
+
+    <!-- Inputs -->
+    <line x1="60" y1="110" x2="120" y2="110" stroke="#333" stroke-width="2"/>
+    <text x="20" y="115">J</text>
+    <line x1="60" y1="190" x2="120" y2="190" stroke="#333" stroke-width="2"/>
+    <text x="20" y="195">K</text>
+
+    <!-- Clock -->
+    <line x1="120" y1="155" x2="90" y2="155" stroke="#333" stroke-width="2"/>
+    <polyline points="90,150 80,155 90,160" fill="none" stroke="#333" stroke-width="2"/>
+    <text x="20" y="160">CLK</text>
+
+    <!-- Outputs -->
+    <line x1="280" y1="110" x2="340" y2="110" stroke="#333" stroke-width="2"/>
+    <text x="350" y="115">Q</text>
+    <line x1="280" y1="190" x2="340" y2="190" stroke="#333" stroke-width="2"/>
+    <text x="350" y="195">Q'</text>
+  </svg>
+</body>
+</html>
